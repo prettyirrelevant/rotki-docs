@@ -64,7 +64,7 @@ Currently supported exchanges are:
 - Option to enable/disable exchange synchronization
 - Consider disabling to avoid IP bans from frequent syncs
 
-> **Note**: At the moment, [margin trades](https://github.com/rotki/rotki/issues/1980) and [future trades](https://github.com/rotki/rotki/issues/1606) are not yet supported in rotki.
+> **Note**: At the moment, [margin trades](https://github.com/rotki/rotki/issues/1980) are not yet supported in rotki.
 
 ### API key permissions
 
@@ -83,6 +83,8 @@ You may also try creating an API key with the minimum read-related permissions, 
 When inputting the API key for Kraken, you need to specify the type of your Kraken account, which depends on your Kraken account verification level. Refer to [this](https://support.kraken.com/hc/en-us/articles/360001395743-Verification-levels-explained) for more information.
 
 ![Kraken account type](/images/exchanges_add_kraken.png)
+
+To track your Kraken Futures balances, you can optionally provide your Futures API key and Futures API secret in the same Kraken exchange form. Both fields must be provided together. When set, rotki will query your Kraken Futures cash, margin, and flex balances and merge them into your overall Kraken balance total.
 
 #### Binance / Binance US
 
